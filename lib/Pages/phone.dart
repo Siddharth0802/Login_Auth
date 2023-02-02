@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:login_auth/Pages/SingIn.dart';
-import 'package:login_auth/Pages/Email.dart';
+import 'package:login_auth/Pages/Name.dart';
 
-class email extends StatelessWidget {
-  const email({Key? key}) : super(key: key);
+class phone extends StatelessWidget {
+  const phone({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,7 @@ class email extends StatelessWidget {
                         onTap: () {Navigator.pop(context);},
                         child: Icon(
                           Icons.arrow_back,
-                          color: Colors.white,
+                          color: Color(0xff4817BEF),
                         ),
                       ),
                     ),
@@ -39,9 +38,9 @@ class email extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 10),
                       child: Text(
-                        "Email",
+                        "Enter Phone Number",
                         style:
-                        TextStyle(fontSize: 25, color: Colors.white,fontWeight: FontWeight.bold),
+                        TextStyle(fontSize: 25, fontWeight: FontWeight.bold,color: Colors.white),
                       ),
                     ),
                   ],
@@ -82,13 +81,10 @@ class email extends StatelessWidget {
                     style: TextStyle(color: Colors.white),
                     obscureText: false,
                     decoration: InputDecoration(
-                        fillColor: Color(0xff121124),
-                        filled: true,
-                        hintText: 'Email Address',
-                        hintStyle: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
-                        prefixIcon: Icon(Icons.email,color: Colors.blue,),
-
-
+                      fillColor: Color(0xff121124),
+                      filled: true,
+                      hintText: '- - - - - - - - - -',
+                      hintStyle: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
 
                     ),
                   ),
@@ -96,28 +92,13 @@ class email extends StatelessWidget {
 
                 SizedBox(height: 15,),
 
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal:5),
-                  child: TextField(
-                    style: TextStyle(color: Colors.white),
-                    obscureText: false,
-                    decoration: InputDecoration(
-                        fillColor: Color(0xff121124),
-                        filled: true,
-                        hintText: 'Password',
-                        hintStyle: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
-                        prefixIcon: Icon(Icons.key,color: Colors.blue,),
-
-
-
-                    ),
-                  ),
-                ),
-
                 SizedBox(height: 60),
 
                 GestureDetector(
-                  onTap: () {
+                  onTap: () {Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const name()),
+                  );
                   },
                   child: Container(
                     height: 50,

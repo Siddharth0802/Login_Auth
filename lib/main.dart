@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_auth/Pages/SingIn.dart';
+import 'package:login_auth/Pages/phone.dart';
+
 
 void main() {
   runApp(const MyApp());

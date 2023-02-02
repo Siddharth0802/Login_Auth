@@ -75,6 +75,19 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      sha256: a3715e3bc90294e971cb7dc063fbf3cd9ee0ebf8604ffeafabd9e6f16abbdbe6
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.18.0"
   js:
     dependency: transitive
     description:
@@ -123,11 +136,27 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.2"
+  pinput:
+    dependency: "direct main"
+    description:
+      name: pinput
+      sha256: e6aabd1571dde622f9b942f62ac2c80f84b0b50f95fa209a93e78f7d621e1f82
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.23"
   sky_engine:
     dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.99"
+  smart_auth:
+    dependency: transitive
+    description:
+      name: smart_auth
+      sha256: "8cfaec55b77d5930ed1666bb7ae70db5bade099bb1422401386853b400962113"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.8"
   source_span:
     dependency: transitive
     description:
@@ -160,6 +189,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  syncfusion_flutter_charts:
+    dependency: "direct main"
+    description:
+      name: syncfusion_flutter_charts
+      sha256: "91204839376779c4ea4d7d7734abb039b429c4248a051c43079bff2e9b920a6e"
+      url: "https://pub.dev"
+    source: hosted
+    version: "20.4.48"
+  syncfusion_flutter_core:
+    dependency: transitive
+    description:
+      name: syncfusion_flutter_core
+      sha256: b3e500b1896d40c8961ab430a94fc22eff8fa1b33af03584e2f0b89371c3fa6a
+      url: "https://pub.dev"
+    source: hosted
+    version: "20.4.48"
   term_glyph:
     dependency: transitive
     description:
@@ -176,6 +221,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.4.16"
+  universal_platform:
+    dependency: transitive
+    description:
+      name: universal_platform
+      sha256: d315be0f6641898b280ffa34e2ddb14f3d12b1a37882557869646e0cc363d0cc
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0+1"
   vector_math:
     dependency: transitive
     description:
@@ -186,3 +239,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=2.18.4 <4.0.0"
+  flutter: ">=3.7.0"
