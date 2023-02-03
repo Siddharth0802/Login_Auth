@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:login_auth/Pages/Dashboard.dart';
-import 'package:login_auth/Pages/Name.dart';
+import 'package:login_auth/Pages/SignUp.dart';
 
-class signIn extends StatefulWidget {
-  const signIn({Key? key}) : super(key: key);
+class SignIn extends StatefulWidget {
+  const SignIn({Key? key}) : super(key: key);
 
   @override
 
-  State<signIn> createState() => _signInState();
+  State<SignIn> createState() => _SignInState();
 }
 
-class _signInState extends State<signIn> {
-  @override
+class _SignInState extends State<SignIn> {
 
   bool _passwordvisible = true;
 
+  @override
   Widget build(BuildContext context) {
     var ht = MediaQuery.of(context).size.height;
 
@@ -30,7 +30,7 @@ class _signInState extends State<signIn> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(
-                    height: 0.08125*ht,
+                    height: 0.04125*ht,
                   ),
 
                   Row(
@@ -38,7 +38,7 @@ class _signInState extends State<signIn> {
                     children: [
                       Text(
                         "Login",
-                        style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:28,color: Color(0xff312E49)),
+                        style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:28,color: const Color(0xff312E49)),
                       ),
                     ],
                   ),
@@ -49,7 +49,7 @@ class _signInState extends State<signIn> {
                     children: [
                       Text(
                         "E-mail",
-                        style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:14,color: Color(0xff312E49)),
+                        style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:14,color: const Color(0xff312E49)),
                       ),
                     ],
                   ),
@@ -59,11 +59,11 @@ class _signInState extends State<signIn> {
                   TextField(
                     obscureText: false,
                     decoration: InputDecoration(
-                      enabledBorder: OutlineInputBorder(
+                      enabledBorder: const OutlineInputBorder(
                         borderSide: BorderSide(
                             width: 1,color: Color(0xFFA2A2A6))
                       ),
-                        prefixIcon: Icon(Icons.mail),
+                        prefixIcon: const Icon(Icons.mail),
                         hintText: 'Your Email',
                       hintStyle: GoogleFonts.questrial(fontWeight:FontWeight.w500,fontSize:12),
 
@@ -75,7 +75,7 @@ class _signInState extends State<signIn> {
                   Row(mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Text("Password",
-                        style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:14,color: Color(0xff312E49)),
+                        style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:14,color: const Color(0xff312E49)),
                       ),
                     ],
                   ),
@@ -85,11 +85,11 @@ class _signInState extends State<signIn> {
                   TextField(
                     obscureText: _passwordvisible,
                     decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
                                 width: 1,color: Color(0xFFA2A2A6))
                         ),
-                        prefixIcon: Icon(Icons.lock),
+                        prefixIcon: const Icon(Icons.lock),
                         hintText: 'Your Password',
                         hintStyle: GoogleFonts.questrial(fontWeight:FontWeight.w500,fontSize:12),
 
@@ -122,7 +122,7 @@ class _signInState extends State<signIn> {
                       height: 50,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: Color(0xffB4AAF2),
+                        color: const Color(0xffB4AAF2),
                       ),
                       child: Center(
                           child: Text("Login",
@@ -141,7 +141,7 @@ class _signInState extends State<signIn> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Expanded(
+                        const Expanded(
                             child: Divider(thickness: 2,
 
                             )),
@@ -149,10 +149,10 @@ class _signInState extends State<signIn> {
                           padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Text(
                             'or continue with',
-                            style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:14,color: Color(0xff747980)),
+                            style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:14,color: const Color(0xff747980)),
                           ),
                         ),
-                        Expanded(
+                        const Expanded(
                             child: Divider(thickness: 2,
                               color: Color(0xFFCDCED1),
                             )),
@@ -166,9 +166,9 @@ class _signInState extends State<signIn> {
                       GestureDetector(
                         onTap: (){},
                         child: Container(
-                          padding: EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(20),
                           decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xFFEBE9F1)),
+                            border: Border.all(color: const Color(0xFFEBE9F1)),
                             borderRadius: BorderRadius.circular(6),
                             color: Colors.white,
                           ),
@@ -181,26 +181,28 @@ class _signInState extends State<signIn> {
                     ],
                   ),
 
-                  SizedBox(height: 100,),
+                  const SizedBox(height: 40,),
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                        "Dont have an account?",
-                      style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:12,color: Color(0xff747980)),
+                        "Don't have an account?",
+                      style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:12,color: const Color(0xff747980)),
                     ),
-                    SizedBox(width: 4,),
+                    const SizedBox(width: 4,),
                     GestureDetector(
                       onTap: (){Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const Name()),);},
+                        MaterialPageRoute(builder: (context) => const Signup()),);},
                       child: Text(
                         "Signup",
-                        style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:12,color: Color(0xff2805FF)),
+                        style: GoogleFonts.questrial(fontWeight:FontWeight.w600,fontSize:12,color: const Color(0xff2805FF)),
                       ),
                     ),
                   ],
                   ),
+
+                  const SizedBox(height: 20,),
                 ],
               ),
             ),
