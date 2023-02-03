@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:login_auth/Pages/phone.dart';
+import 'package:login_auth/Pages/Phone.dart';
 
-class Name extends StatefulWidget {
-  const Name({Key? key}) : super(key: key);
+class Signup extends StatefulWidget {
+  const Signup({Key? key}) : super(key: key);
 
   @override
-  State<Name> createState() => _NameState();
+  State<Signup> createState() => _SignupState();
 }
 
-class _NameState extends State<Name> {
+class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
 
@@ -286,6 +286,8 @@ class _NameState extends State<Name> {
                       ),
                     ],
                   ),
+
+                  const SizedBox(height: 20,),
                 ],
               ),
             ),

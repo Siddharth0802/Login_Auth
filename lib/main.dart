@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_auth/Pages/SingIn.dart';
-import 'package:login_auth/Pages/phone.dart';
+
+
 
 
 void main() {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: signIn(),
+      home: SignIn(),
     );
   }
 }
